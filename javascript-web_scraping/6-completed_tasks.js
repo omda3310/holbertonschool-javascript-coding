@@ -21,7 +21,7 @@ request(apiUrl, function (error, response, body) {
         else {
           completedTasks[todo.userId] = 1;
         }
-      } 
+      }
     }
   }
   console.log(completedTasks);
