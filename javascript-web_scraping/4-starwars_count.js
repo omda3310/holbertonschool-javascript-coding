@@ -1,7 +1,7 @@
 #!/usr/bin/node
 
 const request = require('request');
-const apiUrl = 'https://swapi-api.hbtn.io/api/films/';
+const apiUrl = 'https://swapi-api.hbtn.io/api/films';
 let count = 0;
 
 request(apiUrl, function (error, response, body) {
