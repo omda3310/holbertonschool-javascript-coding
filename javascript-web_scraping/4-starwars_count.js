@@ -10,7 +10,7 @@ request(apiUrl, function(error, response, body) {
   } else {
     const films = JSON.parse(body).results;
     films.forEach(function(film) {
-    if (film.characters.includes("18")) {count++;}
+    if (film.characters.includes('18')) {count++;}
     });
   }
   console.log(count);
