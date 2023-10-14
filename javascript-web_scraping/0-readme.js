@@ -1,7 +1,7 @@
 #!/usr/bin/node
 
 /* File System Object */
-var fs = require('fs');
+const fs = require('fs');
 const argv = process.argv[2];
 
 /* Read File */
