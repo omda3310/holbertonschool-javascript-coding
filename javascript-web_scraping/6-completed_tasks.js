@@ -17,7 +17,7 @@ request(apiUrl, function (error, response, body) {
         if (completedTasks[todo.userId]) {
           completedTasks[todo.userId]++;
         } else {
-            completedTasks[todo.userId] = 1;
+          completedTasks[todo.userId] = 1;
         }
       }
     }
