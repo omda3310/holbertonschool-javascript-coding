@@ -9,9 +9,13 @@ request(apiUrl, function (error, response, body) {
     console.error(error);
   } else {
     const films = JSON.parse(body).results;
-    films.forEach(function (film) {
-      if (film.characters.includes('18')) { count++; }
-    });
+    for (const film of films) {
+      for (const caracter of film.characters) {
+        if (caracter.includes('18')) {
+          count++;
+        }
+      }
+    }
   }
   console.log(count);
 });
